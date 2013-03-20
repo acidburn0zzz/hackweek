@@ -22,9 +22,21 @@
     <script>
         (function($){
             $(window).load(function(){
+
                 $("#wterm").mCustomScrollbar({
+
                     scrollButtons:{
-                        enable:true
+                        enable:true,
+                        scrollType:"continuous"
+                    },
+                    advanced: {
+                        updateOnContentResize: true,
+
+                    },
+                    callbacks:{
+                        onScroll:function(){
+                            $(".wterm_prompt").css({ 'padding-bottom': '30px' });
+                        }
                     }
                 });
             });

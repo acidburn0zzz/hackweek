@@ -188,6 +188,7 @@ span:hover{
     float: left;
     margin-top: -132px;
     position: relative;
+    visibility: hidden;
 }
 #pay-off{
     background-color: #D4DF4C;
